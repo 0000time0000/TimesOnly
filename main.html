@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Твой Сайт</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  .article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .article h2 {
+    margin-top: 0;
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+  }
+</style>
+<script>
+  function redirectToArticle() {
+    var code = document.getElementById("codeInput").value;
+    if (code === "523") {
+      window.location.href = "funpayAuto1.html";
+    } else if (code === "124") {
+      window.location.href = "funpayAuto2.html";
+    } else if (code === "333") {
+      window.location.href = "https://www.youtube.com/watch?v=1Yv5pRbUg50";
+    } else {
+      alert("Неверный код. Попробуйте еще раз.");
+    }
+  }
+</script>
+</head>
+<body>
+  <header>
+    <h1>Твой Сайт</h1>
+  </header>
+  <main>
+    <div>
+      <h2>Введите код:</h2>
+      <input type="text" id="codeInput">
+      <button onclick="redirectToArticle()">Перейти</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Твой Сайт</p>
+  </footer>
+</body>
+</html>
+</html>
